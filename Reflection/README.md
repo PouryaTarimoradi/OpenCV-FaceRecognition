@@ -1,6 +1,6 @@
 # OpenCV Reflection Project
 
-This project demonstrates a bouncing rectangle with reflection using OpenCV and dual camera feeds from Logitech and Py cameras. The core of this project is the implementation of the reflection formula, a fundamental concept in physics and computer graphics.
+This project demonstrates a bouncing rectangle with reflection using OpenCV and a single camera feed (either Logitech or Py camera). The core of this project is the implementation of the reflection formula, a fundamental concept in physics and computer graphics.
 
 ## Reflection Function
 
@@ -41,29 +41,41 @@ This formula calculates how a vector (in our case, the movement direction of the
 
 ## Project Overview
 
-This project uses the reflection function to create a bouncing rectangle effect on two camera feeds:
+This project uses the reflection function to create a bouncing rectangle effect on a camera feed:
 
 1. The rectangle moves across the screen with an initial angle and speed.
 2. When it hits an edge, the `reflect` function is called to calculate the new direction.
 3. An additional rotation is applied after reflection for more dynamic movement.
-4. The rectangle is drawn on both camera feeds (pyCamera and Logitech Camera).
+4. The rectangle is drawn on the camera feed (either pyCamera or Logitech Camera).
 
 ## Key Components
 
-- Dual camera setup (NVIDIA Jetson camera and Logitech camera)
+- Single camera setup (choice between NVIDIA Jetson camera and Logitech camera)
 - OpenCV for image processing and display
 - Real-time video manipulation
 - Physics-based reflection calculation
 
 ## Usage
 
-1. Ensure all dependencies are installed and cameras are connected.
-2. Run the script:
+1. Ensure all dependencies are installed and the chosen camera is connected.
+2. Uncomment the appropriate camera setup lines in the code:
+   - For NVIDIA Jetson (pyCamera):
+     ```python
+     camSet = f'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=3264, height=2464, format=NV12, framerate=21/1 ! nvvidconv flip-method={flip} ! video/x-raw, width={dispW}, height={dispH}, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink'
+     cam = cv2.VideoCapture(camSet)
+     ```
+   - For Logitech camera:
+     ```python
+     cam = cv2.VideoCapture(1)
+     cam.set(cv2.CAP_PROP_FRAME_WIDTH, dispW)
+     cam.set(cv2.CAP_PROP_FRAME_HEIGHT, dispH)
+     ```
+3. Run the script:
    ```
    python reflection.py
    ```
-3. Two windows will open showing the camera feeds with the bouncing rectangle.
-4. Press 'q' to exit the program.
+4. A window will open showing the camera feed with the bouncing rectangle.
+5. Press 'q' to exit the program.
 
 ## Customization
 
@@ -88,6 +100,7 @@ The reflection concept demonstrated in this project has wide-ranging application
 - Implement more complex reflection scenarios 
 - Add user controls for rectangle properties and reflection parameters
 - Integrate with other computer vision techniques for object detection and tracking
+- Add option to switch between cameras dynamically
 
 ## Contributing
 
