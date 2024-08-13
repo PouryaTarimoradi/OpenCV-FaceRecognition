@@ -8,10 +8,10 @@ This repository hosts multiple computer vision projects, each exploring differen
 
 ## Projects
 
-1. [Reflection](./reflection)
+1. [Reflection](./Reflection)
    - Demonstrates a bouncing rectangle with reflection using OpenCV and dual camera feeds.
    - Technologies: Python, OpenCV, NVIDIA Jetson
-   - [View Project](./reflection)
+   - [View Project](./Reflection)
 
 
 ## Getting Started
