@@ -1,10 +1,10 @@
-# OpenCV-Reflection
+# Computer Vision Projects with OpenCV
 
 A collection of OpenCV projects demonstrating various computer vision concepts with Logitech and Py cameras feeds
 
 ## Overview
 
-This repository is a collection of OpenCV projects demonstrating various computer vision concepts. Each project is contained in its own directory with specific code and documentation.
+This repository hosts multiple computer vision projects, each exploring different aspects and techniques in image processing and analysis. Each project is contained in its own directory with specific code and documentation.
 
 ## Projects
 
@@ -13,7 +13,6 @@ This repository is a collection of OpenCV projects demonstrating various compute
    - Technologies: Python, OpenCV, NVIDIA Jetson
    - [View Project](./reflection)
 
-<!-- Add more projects here as you create them -->
 
 ## Getting Started
 
@@ -40,5 +39,16 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 If you have any questions or would like to discuss these projects, feel free to reach out to me at [Your Contact Information].
+
+Happy coding and exploring computer vision!
+Feel free to fork this repository and submit pull requests. If you find any issues or have suggestions for improvements, please open an issue.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contact
+
+If you have any questions or would like to discuss these projects, feel free to reach out to me via my GitHub profile or via https://www.linkedin.com/in/pourya-tari/.
 
 Happy coding and exploring computer vision!
