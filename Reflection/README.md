@@ -85,7 +85,7 @@ The reflection concept demonstrated in this project has wide-ranging application
 
 ## Future Improvements
 
-- Implement more complex reflection scenarios (multiple objects, curved surfaces)
+- Implement more complex reflection scenarios 
 - Add user controls for rectangle properties and reflection parameters
 - Integrate with other computer vision techniques for object detection and tracking
 
