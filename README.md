@@ -10,8 +10,8 @@ This repository hosts multiple computer vision projects, each exploring differen
 
 To explore a specific project:
 
-2. Read the project's README for detailed information
-3. Check out the code and try running it on your own machine
+1. Read the project's README for detailed information
+2. Check out the code and try running it on your own machine
 
 ## Requirements
 
