@@ -6,22 +6,9 @@ A collection of OpenCV projects demonstrating various computer vision concepts w
 
 This repository hosts multiple computer vision projects, each exploring different aspects and techniques in image processing and analysis. Each project is contained in its own directory with specific code and documentation.
 
-## Projects
-
-1. [Reflection](./Reflection)
-   - Demonstrates a bouncing rectangle with reflection using OpenCV and dual camera feeds.
-   - Technologies: Python, OpenCV, NVIDIA Jetson
-   - [View Project](./Reflection)
-2. [Reflection_ROI](./Reflection_ROI)
-   - Demonstrates a the Rigion of Interest of bouncing rectangle with reflection using OpenCV and dual camera feeds.
-   - Technologies: Python, OpenCV, NVIDIA Jetson
-   - [View Project](./Reflection_ROI)
-
-
 ## Getting Started
 
 To explore a specific project:
-1. Click on the project name in the list above
 2. Read the project's README for detailed information
 3. Check out the code and try running it on your own machine
 
