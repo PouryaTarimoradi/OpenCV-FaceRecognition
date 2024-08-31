@@ -27,7 +27,7 @@ This project demonstrates how to create an interactive Region of Interest (ROI) 
 
 1. Run the script:
    ```
-   python roi_selection.py
+   roiMouseClick.py
    ```
 2. A window named "nanoCam" will open showing the live camera feed.
 3. Click and drag on the video feed to select a region of interest.
