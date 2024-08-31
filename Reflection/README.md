@@ -72,7 +72,7 @@ This project uses the reflection function to create a bouncing rectangle effect 
      ```
 3. Run the script:
    ```
-   python reflection.py
+   reflection.py
    ```
 4. A window will open showing the camera feed with the bouncing rectangle.
 5. Press 'q' to exit the program.
