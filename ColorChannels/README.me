@@ -1,1 +1,39 @@
+# ColorChannels.py
 
+## Description
+This Python script demonstrates color channel manipulation using OpenCV. It captures video from a camera, splits the frame into its constituent color channels (Blue, Green, Red), and displays them separately along with the original and merged images.
+
+## Dependencies
+- OpenCV (cv2)
+- NumPy
+
+## Usage
+1. Ensure you have a camera connected to your system.
+2. Run the script:
+   ```
+   python ColorChannels.py
+   ```
+3. The script will open multiple windows showing different channel views.
+4. Press 'q' to quit the program.
+
+## Features
+- Displays the original camera feed
+- Splits the image into Blue, Green, and Red channels
+- Shows each color channel separately
+- Displays a merged view of all channels
+
+## Controls
+- 'q' key: Quit the program
+
+## Notes
+- The script is set up to use camera index 1. You may need to change this to 0 or another index depending on your system setup.
+- The display resolution is set to 640x480. Adjust `dispW` and `dispH` variables if needed.
+- There's a commented-out section for using `nvarguscamerasrc`. Uncomment and modify as necessary for NVIDIA Jetson devices.
+
+## Customization
+- You can modify the window positions by changing the values in the `cv2.moveWindow()` functions.
+- Adjust the `blank` numpy array to change the size of the color channel windows.
+
+## Troubleshooting
+- If you encounter issues with camera capture, ensure your camera is properly connected and recognized by your system.
+- If windows are not displaying correctly, check your screen resolution and adjust the `moveWindow` parameters accordingly.
