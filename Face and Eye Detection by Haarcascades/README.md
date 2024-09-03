@@ -104,13 +104,7 @@ The techniques demonstrated in this project have various applications:
 4. Emotion Recognition: As a first step in detecting facial expressions.
 5. Attendance Systems: Automating attendance tracking in schools or workplaces.
 
-## Future Improvements
 
-* Implement more robust face detection algorithms (e.g., deep learning-based methods)
-* Add face recognition capabilities to identify specific individuals
-* Optimize for better performance on edge devices
-* Implement tracking to reduce frame-to-frame jitter in detections
-* Add features like age and gender estimation based on detected faces
 
 ## Contributing
 
